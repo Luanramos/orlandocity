@@ -1,3 +1,2 @@
-# Hi, This is a new project of Orlando City
-
-This project we will to start from zero.
+# Hello, this is a new project from the city of Orlando
+This project we will start from scratch.
