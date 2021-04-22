@@ -1,0 +1,16 @@
+{
+  "name": "orlandocity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Luanramos/orlandocity.git",
+  "author": "<luan@apiki.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.11"
+  },
+  "scripts": {
+    "build": "parcel build ./assets/styles/* --public-url ./",
+    "dev": "parcel watch ./assets/styles/* --public-url ./"
+  }
+}
