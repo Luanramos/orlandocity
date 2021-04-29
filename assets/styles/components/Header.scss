@@ -1,0 +1,76 @@
+.Header {
+  .Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  &-branding {
+    margin: 20px 0;
+  }
+
+  &-navigation {
+    width: 100%;
+    text-align: center;
+    color: $color-black;
+    background: $color-white;
+    border-top: 1px solid #eee;
+
+    a {
+      border-bottom: 1px solid #eee;
+      display: block;
+      padding: 10px;
+      color: inherit;
+      text-decoration: none;
+      transition: background .3s;
+      outline: 0;
+
+      &:hover,
+      &:focus {
+        background: #eee;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    .Container {
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      justify-content: space-between;
+      padding: 30px 0;
+    }
+
+    &-branding {
+      margin: 0;
+    }
+
+    &-navigation {
+      width: auto;
+      border: 0;
+      background: none;
+
+      ul {
+        display: flex;
+        gap: 40px;
+      }
+
+      a {
+        border: 0;
+        border-radius: 5px;
+        color: $color-white;
+
+        &:hover,
+        &:focus {
+          color: $color-black;
+        }
+      }
+    }
+  }
+}

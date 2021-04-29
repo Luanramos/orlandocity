@@ -1,1 +1,9 @@
-@import './components/Card.scss'
+// Variables/Reset
+@import './components/Reset.scss';
+@import './components/Variables.scss';
+
+// Components
+@import './components/Header.scss';
+@import './components/Container.scss';
+@import './components/Card.scss';
+@import './components/Hero.scss';
