@@ -1,0 +1,35 @@
+.Services {
+    .Container {
+        display: grid;
+        gap: 50px;
+        padding: 35px 0; 
+        grid-template-columns: repeat(2,1fr);  
+    }
+
+    svg {
+        fill: red;
+        margin-bottom: 10px;
+    }
+
+    &-service {
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-grey;
+
+        &-title {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: $color-black;
+        }
+
+    }
+
+    @media (min-width: $desktop) {
+
+        .Container {
+            padding: 85px 0;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
