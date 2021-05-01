@@ -1,0 +1,50 @@
+.Photos {
+    background: green;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    &-photo {
+        background: orange;
+        min-height: 200px;
+        overflow: hidden;
+        position: relative;
+    
+        &:hover,
+        &:focus {
+            .Photos-info {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &-info {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        line-height: 25px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(red, .7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+
+    }
+
+    &-title {
+        width: 100%;
+        text-align: center;
+    }
+}
