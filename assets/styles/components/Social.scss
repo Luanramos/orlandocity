@@ -1,0 +1,15 @@
+.Social {
+  background: $color-white;
+  border: 1px solid $color-grey;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 15px;
+    fill: $color-grey;
+    height: 15px;
+  }
+}
