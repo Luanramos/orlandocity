@@ -1,0 +1,35 @@
+.CardAuthor {
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-grey;
+
+    &-thumb {
+        margin-bottom: 30px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &-title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+
+    &-ocupation {
+        display: block;
+        color: red;
+        margin-bottom: 25px;
+        font-weight: 300;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 14px;
+    }
+}

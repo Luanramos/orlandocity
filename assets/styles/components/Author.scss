@@ -1,0 +1,17 @@
+.Author {
+    margin: 100px 0;
+
+    .Container {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $desktop) {
+        margin: 100px 0;
+
+        .Container {
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+}
