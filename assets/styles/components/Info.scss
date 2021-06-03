@@ -9,13 +9,17 @@
         margin-bottom: 30px;
     }
 
-    .Alignhorizontal {
+    .AlignHorizontal {
         justify-content: center;
     }
 
     .Social {
         background: transparent;
         border-color: $color-white;
+
+        svg {
+          fill: $color-white
+        }
     }
 
     &-title {
