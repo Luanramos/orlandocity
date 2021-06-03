@@ -1,0 +1,24 @@
+.Download {
+  text-align: center;
+  line-height: 25px;
+  background: blue;
+  padding: 40px 0;
+
+  &-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: $color-grey;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 85px 0;
+
+    &-title {
+      font-size: 25px;
+    }
+  }
+}

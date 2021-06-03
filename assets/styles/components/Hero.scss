@@ -29,18 +29,6 @@
     word-break: break-word;
   }
 
-  &-button {
-    background: red;
-    border-radius: 2px;
-    display: table;
-    margin: 0 auto;
-    border: 0;
-    padding: 10px 30px;
-    cursor: pointer;
-    text-transform: uppercase;
-    color: inherit;
-  }
-
   @media (min-width: $desktop) {
     line-height: 45px;
 
