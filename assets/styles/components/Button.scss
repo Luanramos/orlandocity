@@ -1,0 +1,11 @@
+.Button {
+    background: $color-red;
+    border-radius: 2px;
+    display: table;
+    margin: 0 auto;
+    border: 0;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $color-white;
+}

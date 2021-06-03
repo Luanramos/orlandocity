@@ -1,0 +1,47 @@
+.Info {
+    text-align: center;
+    background: $color-darkblue;
+    padding: 40px 0;
+    line-height: 18px;
+    color: $color-white;
+    
+    &-box {
+        margin-bottom: 30px;
+    }
+
+    .Alignhorizontal {
+        justify-content: center;
+    }
+
+    .Social {
+        background: transparent;
+        border-color: $color-white;
+    }
+
+    &-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #8487a6 ;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        
+    }
+
+    @media (min-width: $desktop) {
+        padding: 85px 0;
+
+        .Container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            &-title {
+                margin-bottom: 20px;
+            }
+
+            &-box {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
