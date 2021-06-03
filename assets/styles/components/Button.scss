@@ -1,5 +1,5 @@
 .Button {
-  background: red;
+  background: $color-red;
   border-radius: 2px;
   display: table;
   margin: 0 auto;
@@ -7,5 +7,5 @@
   padding: 10px 30px;
   cursor: pointer;
   text-transform: uppercase;
-  color: inherit;
+  color: $color-white;
 }
