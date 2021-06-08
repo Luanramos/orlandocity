@@ -1,0 +1,37 @@
+.swiper {
+  background: #4a2f40;
+  min-height: 300px;
+
+  &-wrap {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    max-width: 800px;
+  }
+
+  &-description {
+    padding: 10% 0;
+    color: $color-white;
+  }
+
+  &-title {
+    font-size: 40px;
+    max-width: 70%;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+
+  &-pagination {
+    bottom: 110px !important;
+    left: 165px !important;
+
+    &-bullet {
+      width: 10px !important;
+      height: 10px !important;
+      background: $color-white !important;
+    }
+  }
+}

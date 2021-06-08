@@ -10,7 +10,10 @@
     "sass": "^1.32.11"
   },
   "scripts": {
-    "build": "parcel build ./assets/styles/* --public-url ./",
-    "dev": "parcel watch ./assets/styles/* --public-url ./"
+    "build": "parcel build ./assets/styles/* --public-url ./ && parcel build ./assets/javascripts/* --public-url ./",
+    "dev": "parcel watch ./assets/styles/* --public-url ./ && parcel build ./assets/javascripts/* --public-url ./"
+  },
+  "dependencies": {
+    "swiper": "^6.7.0"
   }
 }

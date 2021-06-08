@@ -8,9 +8,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dist/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
-  <header class="Header">
+  <!-- <header class="Header">
     <div class="Container">
       <figure class="Header-branding">
         <img src="https://source.unsplash.com/user/erondu/200x40" alt="Logo do site">
@@ -281,6 +282,48 @@
       </div>
 
     </div>
+  </section> -->
+
+  <section class="swiper swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-wrap">
+          <figure class="swiper-branding">
+            <img src="https://source.unsplash.com/user/erondu/950x500" alt="slide">
+          </figure>
+          <div class="swiper-description">
+            <h2 class="swiper-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, natus.</h2>
+            <cite>Susan sims, interaction designer at xyz</cite>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="swiper-wrap">
+          <figure class="swiper-branding">
+            <img src="https://source.unsplash.com/user/erondu/950x500" alt="slide">
+          </figure>
+          <div class="swiper-description">
+            <h2 class="swiper-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, natus.</h2>
+            <cite>Susan sims, interaction designer at xyz</cite>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="swiper-wrap">
+          <figure class="swiper-branding">
+            <img src="https://source.unsplash.com/user/erondu/950x500" alt="slide">
+          </figure>
+          <div class="swiper-description">
+            <h2 class="swiper-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, natus.</h2>
+            <cite>Susan sims, interaction designer at xyz</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
   </section>
 
   <section class="Download">
@@ -337,5 +380,20 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+  
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>  
 </body>
 </html>
